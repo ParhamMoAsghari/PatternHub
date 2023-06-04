@@ -29,6 +29,7 @@ export function Navbar({ brandName, routes, action }) {
           variant="small"
           color="inherit"
           className="capitalize"
+          onClick={() => setOpenNav(false)}
         >
           {href ? (
             <a
@@ -75,7 +76,7 @@ export function Navbar({ brandName, routes, action }) {
             target="_blank"
           >
             <Button variant="text" size="sm" color="white" fullWidth>
-              وژن پرو
+              ورژن پرو
             </Button>
           </a>
           {React.cloneElement(action, {
