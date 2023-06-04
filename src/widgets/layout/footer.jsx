@@ -111,7 +111,7 @@ Footer.defaultProps = {
     {
       color: "black",
       name: "github",
-      path: "https://github.com/ramtin-mhd",
+      path: "https://github.com/ramtin-mhd/PatternHub",
     },
   ],
   menus: [
@@ -122,7 +122,7 @@ Footer.defaultProps = {
         { name: "بلاگ", path: "https://" },
         {
           name: "گیت هاب",
-          path: "https://",
+          path: "https://github.com/ramtin-mhd/PatternHub",
         },
         {
           name: "محصولات ما",
