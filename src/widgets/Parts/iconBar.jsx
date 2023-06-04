@@ -7,8 +7,8 @@ export function iconBar() {
     return (
         <section className="relative bg-blue-gray-50/50 py-8 px-4">
             <div className="container mx-auto">
-                <PageTitle heading="یکم شوآف و پترن">
-                    توضیحات مربوط به شوآف
+                <PageTitle heading="پترن هاب">
+                    مهندسی نرم افزار به زبان ساده
                 </PageTitle>
                 <div
                     className="mx-auto mt-20 mb-48 grid max-w-5xl grid-cols-1 gap-16 md:grid-cols-2 lg:grid-cols-3">

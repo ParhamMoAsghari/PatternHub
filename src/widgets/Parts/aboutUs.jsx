@@ -22,19 +22,19 @@ export function aboutUs() {
                             کار کردن با شما باعث افتخار ماست
                         </Typography>
                         <Typography className="mb-8 font-normal text-blue-gray-500">
-                            در حد چند خط شعر
+                            نطرات و انتفادات خود را برای ما ارسال کنید
                             <br />
                             <br />
-                            دو سه خط دیگه شعر و موحتوا
+                            از طریق گیت هاب، ایمیل و یا فرم ارتباط با ما
                         </Typography>
-                        <Button variant="outlined">بیشتر در مورد ما بدونید</Button>
+                        <Button variant="outlined">ارتباط با ما</Button>
                     </div>
                     <div className="mx-auto mt-24 flex w-full justify-center px-4 md:w-4/12 lg:mt-0">
                         <Card className="shadow-lg shadow-gray-500/10">
                             <CardHeader className="relative h-56">
                                 <img
                                     alt="Card Image"
-                                    src="/img/teamwork.jpeg"
+                                    src="/img/raziUniversity.jpg"
                                     className="h-full w-full"
                                 />
                             </CardHeader>
@@ -44,10 +44,10 @@ export function aboutUs() {
                                     color="blue-gray"
                                     className="mb-3 font-bold"
                                 >
-                                    کار هایی که تیم ما کرده
+                                    دانشگاه رازی کرمانشاه
                                 </Typography>
                                 <Typography className="font-normal text-blue-gray-500">
-                                    یکم شعر از خودمون به علاوه عکس بالاش
+                                    گروه مهندسی کامپیوتر و فناوری اطلاعات
                                 </Typography>
                             </CardBody>
                         </Card>

@@ -10,7 +10,7 @@ export const featuresData = [
     title: "مزایای دیزاین پترن ها",
     icon: StarIcon,
     description:
-      "Divide details about your product or agency work into parts. A paragraph describing a feature will be enough.",
+      "سازماندهی و ساختاردهی کد، افزایش قابلیت خوانایی و قابلیت تغییرپذیری، استفاده مجدد از کد، کاهش تکرار و خطاها، افزایش کارایی توسعه دهندگان، افزایش سرعت توسعه و امکان توسعه پذیری برنامه",
   },
   {
     color: "red",
@@ -24,7 +24,7 @@ export const featuresData = [
     title: "دسته بندی دیزاین پترن ها",
     icon: FingerPrintIcon,
     description:
-      "Write a few lines about each one. A paragraph describing a feature will be enough. Keep you user engaged!",
+      "دیزاین پترن‌ها را می‌توان به چند دسته‌ی اصلی تقسیم کرد: معماری (مانند MVC)، ساختاری (مانند Singleton)، رفتاری (مانند Observer) و آفرینشی (مانند Strategy). هر کدام را می‌توان برای حل مشکلات مربوطه و جداسازی وظایف استفاده کرد.",
   },
 ];
 

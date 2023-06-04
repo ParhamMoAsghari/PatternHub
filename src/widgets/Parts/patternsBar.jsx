@@ -8,8 +8,8 @@ export function patternsBar() {
     return (
         <section className="px-4 pt-20 pb-48">
             <div className="container mx-auto">
-                <PageTitle heading="عکس خودمون یا چند تا ریپازیتوری گیت هاب">
-                    توضیح راجب این که چی گذاشیم و اینا
+                <PageTitle heading="انواع دیزاین پترن ها">
+                    همراه با توضیحات و مثال های متنوع
                 </PageTitle>
                 <div className="mt-24 grid grid-cols-1 gap-12 gap-x-24 md:grid-cols-2 xl:grid-cols-4">
                     {patternTypes.map(({img, name, position, socials}) => (
