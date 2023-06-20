@@ -1,4 +1,4 @@
-import { Home, Profile, SignIn, SignUp } from "@/pages";
+import { Home, Profile, SignIn, SignUp, PatternsCatalog } from "@/pages";
 import {
   HomeIcon,
   UserCircleIcon,
@@ -35,9 +35,9 @@ export const routes = [
   {
     icon: DocumentTextIcon,
     name: "پترن ها",
-    href: "https://www.material-tailwind.com/docs/react/installation",
+    path: "/patterns_catalog",
     target: "_blank",
-    element: "",
+    element: <PatternsCatalog />,
   },
 ];
 
