@@ -111,7 +111,7 @@ Footer.defaultProps = {
     {
       color: "black",
       name: "github",
-      path: "https://github.com/ramtin-mhd/PatternHub",
+      path: "https://github.com/ParhamMoAsghari/PatternHub",
     },
   ],
   menus: [
@@ -122,7 +122,7 @@ Footer.defaultProps = {
         { name: "بلاگ", path: "https://" },
         {
           name: "گیت هاب",
-          path: "https://github.com/ramtin-mhd/PatternHub",
+          path: "https://github.com/ParhamMoAsghari/PatternHub",
         },
         {
           name: "محصولات ما",
@@ -155,13 +155,10 @@ Footer.defaultProps = {
   copyright: (
     <>
       Copyright © {year} Patter Hub{" "}
-      <a
-        href="https://www.creative-tim.com?ref=mtk"
-        target="_blank"
-        className="text-blue-gray-500 transition-colors hover:text-blue-500"
-      >
+      <p
+        className="text-blue-gray-500 transition-colors hover:text-blue-500">
         by Ramtin & Parham
-      </a>
+      </p>
       .
     </>
   ),

@@ -39,6 +39,13 @@ export const routes = [
     target: "_blank",
     element: <PatternsCatalog />,
   },
+  {
+    icon: DocumentTextIcon,
+    name: "پترن ها",
+    path: "/patterns_catalog/:patternType",
+    element: <PatternsCatalog />,
+    showInNav: false,
+  },
 ];
 
 export default routes;
