@@ -33,7 +33,7 @@ const structural = (
         <PatternCard
             title="Bridge"
             description="الگوی پل به شما امکان می‌دهد ارتباط بین اجزاء مختلف سیستم را جدا کرده و قابلیت تغییرات و انعطاف‌پذیری را فراهم کنید."
-            imageSRC="/img/bridge.jpg"
+            imageSRC="/img/Bridge.jpg"
             link="/patterns_catalog/structural"/>
         <PatternCard
             title="Composite"
@@ -49,6 +49,7 @@ const behavioral = (
             title="Chain of Responsibility"
             description="الگوهایی که به شما کمک می‌کنند نحوه ایجاد شیء را بهینه‌تر مدیریت کنید"
             imageSRC="/img/ChainOfResponsibility.png"
+            placeholderSrc={"/img/small/ChainOfResponsibility.png"}
             link="/patterns_catalog/structural"/>
         <PatternCard
             title="Command"
@@ -59,6 +60,7 @@ const behavioral = (
             title="Interpreter"
             description="الگوهایی که بر رفتار و ارتباط بین اشیاء متمرکز می‌شوند"
             imageSRC="/img/Interpreter.jpg"
+            placeholderSrc={"/img/small/Interpreter.jpg"}
             link="/patterns_catalog/structural"/>
     </>
 )
