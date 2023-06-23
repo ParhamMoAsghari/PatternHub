@@ -46,6 +46,13 @@ export const routes = [
         element: <PatternsCatalog/>,
         showInNav: false,
     },
+    {
+        icon: DocumentTextIcon,
+        name: "پترن ها",
+        path: "/patterns_catalog",
+        element: <PatternsCatalog/>,
+        showInNav: false,
+    },
 ];
 
 export default routes;
