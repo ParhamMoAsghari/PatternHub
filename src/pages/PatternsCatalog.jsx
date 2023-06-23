@@ -1,4 +1,4 @@
-import "./index.css"
+import "./CardTransition.css"
 import PatternCard from "@/widgets/cards/PatternCard.jsx";
 import {useEffect, useRef, useState} from "react";
 import {useParams} from "react-router-dom";
