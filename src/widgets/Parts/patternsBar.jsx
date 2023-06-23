@@ -1,6 +1,6 @@
 import React from 'react';
 import {PageTitle} from "@/widgets/layout/index.js";
-import {patternTypes} from "@/data/index.js";
+import {patternsInMainPage} from "@/data/index.js";
 import {TeamCard} from "@/widgets/cards/index.js";
 import {IconButton} from "@material-tailwind/react";
 
@@ -12,7 +12,7 @@ export function patternsBar() {
                     همراه با توضیحات و مثال های متنوع
                 </PageTitle>
                 <div className="mt-24 grid grid-cols-1 gap-12 gap-x-24 md:grid-cols-2 xl:grid-cols-4">
-                    {patternTypes.map(({img, name, position, socials}) => (
+                    {patternsInMainPage.map(({img, name, position, socials}) => (
                         <TeamCard
                             key={name}
                             img={img}

@@ -1,3 +1,3 @@
-export * from "@/data/features-data";
-export * from "@/data/PatternTypes.js";
-export * from "@/data/contact-data";
+export * from "@/data/UnderHeaderExp.js";
+export * from "@/data/PatternsInMainPage.js";
+export * from "@/data/AboveAboutUs.js";

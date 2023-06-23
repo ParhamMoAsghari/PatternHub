@@ -12,7 +12,7 @@ export function Home() {
         <>
             <div className="relative flex h-screen content-center items-center justify-center pt-16 pb-32">
                 <div
-                    className="absolute top-0 h-full w-full bg-[url('https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80')] bg-cover bg-center"/>
+                    className="absolute top-0 h-full w-full bg-[url('https://www.digitalocean.com/_next/static/media/intro-to-cloud.d49bc5f7.jpeg')] bg-cover bg-center"/>
                 <div className="absolute top-0 h-full w-full bg-black/75 bg-cover bg-center"/>
                 <div className="max-w-8xl container relative mx-auto">
                     <div className="flex flex-wrap items-center">

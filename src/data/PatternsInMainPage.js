@@ -1,4 +1,4 @@
-export const patternTypes = [
+export const patternsInMainPage = [
   {
     img: "/img/team-1.jpg",
     name: "پترن های آفرینشی",
@@ -77,4 +77,4 @@ export const patternTypes = [
   },
 ];
 
-export default patternTypes;
+export default patternsInMainPage;

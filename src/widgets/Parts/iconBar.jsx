@@ -1,6 +1,6 @@
 import React from 'react';
 import {PageTitle} from "@/widgets/layout/index.js";
-import {contactData} from "@/data/index.js";
+import {aboveAboutUs} from "@/data/index.js";
 import {Card, Typography} from "@material-tailwind/react";
 
 export function iconBar() {
@@ -12,7 +12,7 @@ export function iconBar() {
                 </PageTitle>
                 <div
                     className="mx-auto mt-20 mb-48 grid max-w-5xl grid-cols-1 gap-16 md:grid-cols-2 lg:grid-cols-3">
-                    {contactData.map(({title, icon, description}) => (
+                    {aboveAboutUs.map(({title, icon, description}) => (
                         <Card
                             key={title}
                             color="transparent"

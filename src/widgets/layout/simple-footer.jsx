@@ -18,7 +18,7 @@ export function SimpleFooter({ brandName, brandLink, routes }) {
           >
             {brandName}
           </a>{" "}
-          for a better web.
+          for all students
         </Typography>
         <ul className="flex items-center gap-4">
           {routes.map(({ name, path }) => (
@@ -41,7 +41,7 @@ export function SimpleFooter({ brandName, brandLink, routes }) {
 }
 
 SimpleFooter.defaultProps = {
-  brandName: "Pattern Hub",
+  brandName: "PatternHub",
   brandLink: "https://",
   routes: [
     { name: "Pattern Hub", path: "https://www.patternhub.ir" },

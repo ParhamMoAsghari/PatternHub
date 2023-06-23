@@ -4,7 +4,7 @@ import {
   RocketLaunchIcon,
 } from "@heroicons/react/24/solid";
 
-export const contactData = [
+export const aboveAboutUs = [
   {
     title: "مثال های متنوع",
     icon: StarIcon,
@@ -25,4 +25,4 @@ export const contactData = [
   },
 ];
 
-export default contactData;
+export default aboveAboutUs;

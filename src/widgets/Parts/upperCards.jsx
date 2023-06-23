@@ -1,5 +1,5 @@
 import React from 'react';
-import {featuresData} from "@/data/index.js";
+import {underHeaderExp} from "@/data/index.js";
 import {FeatureCard} from "@/widgets/cards/index.js";
 
 export function upperCards() {
@@ -7,7 +7,7 @@ export function upperCards() {
         <section className="-mt-32 bg-gray-50 px-4 pb-20 pt-4">
             <div className="container mx-auto">
                 <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-                    {featuresData.map(({color, title, icon, description}) => (
+                    {underHeaderExp.map(({color, title, icon, description}) => (
                         <FeatureCard
                             key={title}
                             color={color}

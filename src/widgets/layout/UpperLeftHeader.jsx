@@ -10,7 +10,7 @@ import {
 } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
-export function Navbar({ brandName, routes, action }) {
+export function UpperLeftHeader({ brandName, routes, action }) {
   const [openNav, setOpenNav] = React.useState(false);
   const loation = useLocation().pathname;
 
@@ -127,7 +127,7 @@ export function Navbar({ brandName, routes, action }) {
   );
 }
 
-Navbar.defaultProps = {
+UpperLeftHeader.defaultProps = {
   brandName: "Pattern Hub",
   action: (
     <a
@@ -141,12 +141,12 @@ Navbar.defaultProps = {
   ),
 };
 
-Navbar.propTypes = {
+UpperLeftHeader.propTypes = {
   brandName: PropTypes.string,
   routes: PropTypes.arrayOf(PropTypes.object).isRequired,
   action: PropTypes.node,
 };
 
-Navbar.displayName = "/src/widgets/layout/navbar.jsx";
+UpperLeftHeader.displayName = "/src/widgets/layout/UpperLeftHeader.jsx";
 
-export default Navbar;
+export default UpperLeftHeader;

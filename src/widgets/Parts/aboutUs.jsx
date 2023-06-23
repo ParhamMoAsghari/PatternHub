@@ -1,5 +1,5 @@
 import React from 'react';
-import {featuresData} from "@/data/index.js";
+import {underHeaderExp} from "@/data/index.js";
 import {FeatureCard} from "@/widgets/cards/index.js";
 import {UsersIcon} from "@heroicons/react/24/solid/index.js";
 import {Button, Card, CardBody, CardHeader, Typography} from "@material-tailwind/react";
@@ -19,7 +19,7 @@ export function aboutUs() {
                             className="mb-3 font-bold"
                             color="blue-gray"
                         >
-                            کار کردن با شما باعث افتخار ماست
+                            همراهی شما باعث افتخار ماست
                         </Typography>
                         <Typography className="mb-8 font-normal text-blue-gray-500">
                             نطرات و انتفادات خود را برای ما ارسال کنید
