@@ -34,8 +34,8 @@ export const routes = [
   },
   {
     icon: DocumentTextIcon,
-    name: "پترن ها",
-    path: "/patterns_catalog",
+    name: "ارتباط با ما",
+    path: "/contact_us",
     target: "_blank",
     element: <PatternsCatalog />,
   },

@@ -140,14 +140,14 @@ export function PatternsCatalog() {
         <>
             <section className="relative block h-[50vh]">
                 <div
-                    className="bg-profile-background absolute top-0 h-full w-full bg-[url('/img/background-1.jpg')] bg-cover bg-center"/>
+                    className="bg-profile-background absolute top-0 h-full w-full bg-[url('/img/DesignPatterns.jpg')] bg-cover bg-center"/>
                 <div className="absolute top-0 h-full w-full bg-black/75 bg-cover bg-center"/>
             </section>
             <section className="relative bg-blue-gray-50/50 py-16 px-4 content-center">
                 <div className="container mx-auto">
                         <div className="flex items-center justify-center bg-gray-200 -mt-64 rounded-3xl">
                             <div ref={cardContainerRef}
-                                 className="grid sm:grid-cols-2 gap-6 md:grid-cols-2 lg:grid-cols-3 my-12 card-container">
+                                 className="grid sm:grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 my-12 card-container justify-center align-middle">
                                 {patternType === undefined && types}
                                 {patternType === "structural" && structural}
                                 {patternType === "behavioral" && behavioral}
