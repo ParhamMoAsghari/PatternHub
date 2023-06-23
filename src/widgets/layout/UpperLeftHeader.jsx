@@ -124,7 +124,7 @@ UpperLeftHeader.defaultProps = {
       target="_blank"
     >
       <Button variant="gradient" size="sm" fullWidth>
-        دانلود رایگان
+        الگو های طراحی
       </Button>
     </Link>
   ),
