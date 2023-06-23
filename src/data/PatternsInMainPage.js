@@ -1,6 +1,6 @@
 export const patternsInMainPage = [
   {
-    img: "/img/team-1.jpg",
+    img: "/img/MP-AdamCreation.png",
     name: "پترن های آفرینشی",
     position: "الگوهایی که به شما کمک می‌کنند نحوه ایجاد شیء را بهینه‌تر مدیریت کنید",
     socials: [
@@ -19,7 +19,7 @@ export const patternsInMainPage = [
     ],
   },
   {
-    img: "/img/team-2.jpg",
+    img: "/img/MP-structure.png",
     name: "پترن های ساختاری",
     position: "الگوهایی که به شما کمک می‌کنند ساختارهای مختلف برنامه را بهبود بخشید",
     socials: [
@@ -38,7 +38,7 @@ export const patternsInMainPage = [
     ],
   },
   {
-    img: "/img/team-3.jpg",
+    img: "/img/MP-Scream.png",
     name: "پترن های رفتاری",
     position: "الگوهایی که بر رفتار و ارتباط بین اشیاء متمرکز می‌شوند",
     socials: [
@@ -57,7 +57,7 @@ export const patternsInMainPage = [
     ],
   },
   {
-    img: "/img/team-4.png",
+    img: "/img/MP-SOLID.png",
     name: "اصول SOLID",
     position: "مجموعه‌ای از اصول که به شما کمک می‌کنند ساختار و معماری برنامه را قابل فهم، قابل توسعه و قابل نگهداری کنید",
     socials: [
