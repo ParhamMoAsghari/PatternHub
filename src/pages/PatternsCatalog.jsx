@@ -33,7 +33,7 @@ const structural = (
         <PatternCard
             title="Bridge"
             description="الگوی پل به شما امکان می‌دهد ارتباط بین اجزاء مختلف سیستم را جدا کرده و قابلیت تغییرات و انعطاف‌پذیری را فراهم کنید."
-            imageSRC="/img/bridge.jpg"
+            imageSRC="/img/Bridge.jpg"
             link="/patterns_catalog/structural"/>
         <PatternCard
             title="Composite"
@@ -49,6 +49,7 @@ const behavioral = (
             title="Chain of Responsibility"
             description="الگوهایی که به شما کمک می‌کنند نحوه ایجاد شیء را بهینه‌تر مدیریت کنید"
             imageSRC="/img/ChainOfResponsibility.png"
+            placeholderSrc={"/img/small/ChainOfResponsibility.png"}
             link="/patterns_catalog/structural"/>
         <PatternCard
             title="Command"
@@ -59,11 +60,57 @@ const behavioral = (
             title="Interpreter"
             description="الگوهایی که بر رفتار و ارتباط بین اشیاء متمرکز می‌شوند"
             imageSRC="/img/Interpreter.jpg"
+            placeholderSrc={"/img/small/Interpreter.jpg"}
             link="/patterns_catalog/structural"/>
     </>
 )
 const creational = (
     <>
+        <PatternCard
+            title="Abstract Factory"
+            description="الگوهایی که به شما کمک می‌کنند نحوه ایجاد شیء را بهینه‌تر مدیریت کنید"
+            imageSRC="/img/AbstractFactory.jpg"
+            link="/patterns_catalog/structural"/>
+        <PatternCard
+            title="Builder"
+            description="الگوهایی که به شما کمک می‌کنند ساختارهای مختلف برنامه را بهبود بخشید"
+            imageSRC="/img/Builder.avif"
+            link="/patterns_catalog/structural"/>
+        <PatternCard
+            title="Factory Method"
+            description="الگوهایی که بر رفتار و ارتباط بین اشیاء متمرکز می‌شوند"
+            imageSRC="/img/FactoryMethod.png"
+            link="/patterns_catalog/structural"/>
+        <PatternCard
+            title="Abstract Factory"
+            description="الگوهایی که به شما کمک می‌کنند نحوه ایجاد شیء را بهینه‌تر مدیریت کنید"
+            imageSRC="/img/AbstractFactory.jpg"
+            link="/patterns_catalog/structural"/>
+        <PatternCard
+            title="Builder"
+            description="الگوهایی که به شما کمک می‌کنند ساختارهای مختلف برنامه را بهبود بخشید"
+            imageSRC="/img/Builder.avif"
+            link="/patterns_catalog/structural"/>
+        <PatternCard
+            title="Factory Method"
+            description="الگوهایی که بر رفتار و ارتباط بین اشیاء متمرکز می‌شوند"
+            imageSRC="/img/FactoryMethod.png"
+            link="/patterns_catalog/structural"/>
+        <PatternCard
+            title="Abstract Factory"
+            description="الگوهایی که به شما کمک می‌کنند نحوه ایجاد شیء را بهینه‌تر مدیریت کنید"
+            imageSRC="/img/AbstractFactory.jpg"
+            link="/patterns_catalog/structural"/>
+        <PatternCard
+            title="Builder"
+            description="الگوهایی که به شما کمک می‌کنند ساختارهای مختلف برنامه را بهبود بخشید"
+            imageSRC="/img/Builder.avif"
+            link="/patterns_catalog/structural"/>
+        <PatternCard
+            title="Factory Method"
+            description="الگوهایی که بر رفتار و ارتباط بین اشیاء متمرکز می‌شوند"
+            imageSRC="/img/FactoryMethod.png"
+            link="/patterns_catalog/structural"/>
         <PatternCard
             title="Abstract Factory"
             description="الگوهایی که به شما کمک می‌کنند نحوه ایجاد شیء را بهینه‌تر مدیریت کنید"
@@ -90,14 +137,26 @@ export function PatternsCatalog() {
         cardContainer.classList.add("card-enter");
     }, [patternType]);
     return (
-        <div className="flex items-center justify-center sm:h-screen w-screen bg-gray-200">
-            <div ref={cardContainerRef} className="grid sm:grid-cols-2 gap-6 md:grid-cols-2 lg:grid-cols-3 mt-4 card-container">
-                {patternType === undefined && types}
-                {patternType === "structural" && structural}
-                {patternType === "behavioral" && behavioral}
-                {patternType === "creational" && creational}
-            </div>
-        </div>
+        <>
+            <section className="relative block h-[50vh]">
+                <div
+                    className="bg-profile-background absolute top-0 h-full w-full bg-[url('/img/background-1.jpg')] bg-cover bg-center"/>
+                <div className="absolute top-0 h-full w-full bg-black/75 bg-cover bg-center"/>
+            </section>
+            <section className="relative bg-blue-gray-50/50 py-16 px-4 content-center">
+                <div className="container mx-auto">
+                        <div className="flex items-center justify-center bg-gray-200 -mt-64 rounded-3xl">
+                            <div ref={cardContainerRef}
+                                 className="grid sm:grid-cols-2 gap-6 md:grid-cols-2 lg:grid-cols-3 my-12 card-container">
+                                {patternType === undefined && types}
+                                {patternType === "structural" && structural}
+                                {patternType === "behavioral" && behavioral}
+                                {patternType === "creational" && creational}
+                            </div>
+                        </div>
+                    </div>
+            </section>
+        </>
     );
 }
 
