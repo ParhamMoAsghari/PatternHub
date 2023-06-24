@@ -97,48 +97,43 @@ export function Profile() {
 
                             <div className="my-20 text-center">
                                 <Typography variant="h2" color="blue-gray" className="mb-2">
-                                    ری اکت شهر هستیم
+                                    دست‌اندرکاران
                                 </Typography>
 
                             </div>
 
 
-                            <div className="flex justify-center">
-
-                                <div className="flex flex-col items-center mx-20 mb-6">
+                            <div className="flex flex-col items-center mx-4 mb-6 md:flex-row md:justify-center md:mx-20">
+                                <div className="flex flex-col items-center mb-6">
                                     <div className="flex flex-col items-center">
-                                        <a href="https://github.com/ramtin-mhd" target="_blank"
-                                           rel="noopener noreferrer">
+                                        <a href="https://github.com/ramtin-mhd" target="_blank" rel="noopener noreferrer">
                                             <ImagePlaceHolder placeholderSrc="">
-                                                <img src="https://avatars.githubusercontent.com/u/135214372?v=4"
-                                                     alt="Rami" className=" rounded-full w-40 hm-40"/>
+                                                <img src="https://avatars.githubusercontent.com/u/135214372?v=4" alt="Rami" className="rounded-full w-40 h-40"/>
                                             </ImagePlaceHolder>
                                         </a>
                                         <p>Ramtin's GitHub</p>
                                     </div>
                                 </div>
 
-                                <div className="flex flex-col items-center mx-20 mb-6">
+                                <div className="flex flex-col items-center mb-6">
                                     <div className="flex flex-col items-center">
-                                        <a href="https://github.com/ParhamMoAsghari" target="_blank"
-                                           rel="noopener noreferrer">
+                                        <a href="https://github.com/ParhamMoAsghari" target="_blank" rel="noopener noreferrer">
                                             <ImagePlaceHolder placeholderSrc="">
-                                                <img src="https://avatars.githubusercontent.com/u/96473677?v=4"
-                                                     alt="Pari" className="rounded-full w-40 h-40"/>
+                                                <img src="https://avatars.githubusercontent.com/u/96473677?v=4" alt="Pari" className="rounded-full w-40 h-40"/>
                                             </ImagePlaceHolder>
                                         </a>
-                                        <p>Pari GitHub</p>
+                                        <p>Parham's GitHub</p>
                                     </div>
                                 </div>
-
                             </div>
+
 
 
                             <div className="mb-10 border-t border-blue-gray-50 py-6 text-center">
                                 <div className="mt-2 flex flex-wrap justify-center">
                                     <div className="flex w-full flex-col items-center px-4 lg:w-9/12">
                                         <Typography className="mb-8 font-normal text-blue-gray-500">
-                                            فکر کنید اینا توضیحاته
+                                            بستگی داره !
                                         </Typography>
                                         <Button variant="text">بیشتر</Button>
                                     </div>
