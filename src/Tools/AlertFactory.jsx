@@ -3,13 +3,14 @@ import {Alert} from "@material-tailwind/react";
 class AlertFactory {
     static createAlert(statusCode, message, className = "") {
         switch (statusCode) {
+            case 201:
             case 200:
                 return AlertFactory.createSuccessAlert(message, className);
             case 400:
                 return AlertFactory.createErrorAlert(message, className);
             case 404:
                 return AlertFactory.createNotFoundAlert(message, className);
-            case -1:
+            case null:
                 return AlertFactory.createNetworkErrorAlert(message, className);
             // Add more cases as needed for other status codes
             default:

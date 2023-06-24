@@ -22,15 +22,15 @@ export function SignUp() {
   const [alert, setAlert] = useState(null);
 
   const handleRegister = async () => {
+    let response;
     try {
       // Make register request to the server using axios
-      const response = await axios.post('http://localhost:3000/users/register', {email, password, name});
-      console.log(response.data)
-      // Redirect or perform other actions after successful login
+      response = await axios.post('http://localhost:3000/users/register', {email, password, name});
+      // Redirect or perform other actions after successful
       setAlert(AlertFactory.createAlert(response.status, "ثبت نام با موفقیت انجام شد!", "fixed content-center justify-center mt-16 sm:mr-8 sm:w-1/3"));
     } catch (error) {
       // Handle login error
-      setAlert(AlertFactory.createAlert(-1, error, "fixed content-center justify-center mt-16 sm:mr-8 sm:w-1/3"));
+      setAlert(AlertFactory.createAlert(response?.status||null, error, "fixed content-center justify-center mt-16 sm:mr-8 sm:w-1/3"));
       console.error(error)
     }
   };
