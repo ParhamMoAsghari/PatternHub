@@ -70,17 +70,17 @@ const creational = (
             title="Abstract Factory"
             description="الگوهایی که به شما کمک می‌کنند نحوه ایجاد شیء را بهینه‌تر مدیریت کنید"
             imageSRC="/img/AbstractFactory.jpg"
-            link="/pattern/structural/abstractFactory"/>
+            link="/pattern/creational/abstractFactory"/>
         <PatternCard
             title="Builder"
             description="الگوهایی که به شما کمک می‌کنند ساختارهای مختلف برنامه را بهبود بخشید"
             imageSRC="/img/Builder.avif"
-            link="/pattern/structural/builder"/>
+            link="/pattern/creational/builder"/>
         <PatternCard
             title="Factory Method"
             description="الگوهایی که بر رفتار و ارتباط بین اشیاء متمرکز می‌شوند"
             imageSRC="/img/FactoryMethod.png"
-            link="/pattern/structural/factoryMethod"/>
+            link="/pattern/creational/factoryMethod"/>
     </>
 )
 
