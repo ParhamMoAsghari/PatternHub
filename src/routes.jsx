@@ -7,6 +7,7 @@ import {
     DocumentTextIcon,
     PhoneIcon
 } from "@heroicons/react/24/solid";
+import PatternDescription from "@/pages/PatternDescription.jsx";
 
 export const routes = [
     {
@@ -51,6 +52,13 @@ export const routes = [
         name: "پترن ها",
         path: "/patterns_catalog",
         element: <PatternsCatalog/>,
+        showInNav: false,
+    },
+    {
+        icon: DocumentTextIcon,
+        name: "توضیحات پترن",
+        path: "/pattern/:patternType/:patternName",
+        element: <PatternDescription/>,
         showInNav: false,
     },
 ];

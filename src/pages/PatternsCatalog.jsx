@@ -1,6 +1,6 @@
 import "./CardTransition.css"
 import PatternCard from "@/widgets/cards/PatternCard.jsx";
-import {useEffect, useRef, useState} from "react";
+import {useEffect, useRef} from "react";
 import {useParams} from "react-router-dom";
 
 const types = (
@@ -26,20 +26,20 @@ const types = (
 const structural = (
     <>
         <PatternCard
-            title="Adaptor"
+            title="Adapter"
             description="الگوی آداپتور به شما امکان می‌دهد رابطه‌ی ساختاری بین دو کلاس مختلف را تطبیق دهید."
             imageSRC="/img/Adapter.webp"
-            link="/patterns_catalog/structural"/>
+            link="/pattern/structural/adapter"/>
         <PatternCard
             title="Bridge"
             description="الگوی پل به شما امکان می‌دهد ارتباط بین اجزاء مختلف سیستم را جدا کرده و قابلیت تغییرات و انعطاف‌پذیری را فراهم کنید."
             imageSRC="/img/Bridge.jpg"
-            link="/patterns_catalog/structural"/>
+            link="/pattern/structural/bridge"/>
         <PatternCard
             title="Composite"
             description="الگوی کامپوزیت به شما اجازه می‌دهد اشیاء را در ساختارهای سلسله‌مراتبی یکپارچه کنید و به آن‌ها به عنوان یک واحد عمل کنید."
             imageSRC="/img/Composite.jpg"
-            link="/patterns_catalog/structural"/>
+            link="/pattern/structural/composite"/>
     </>
 )
 
@@ -50,18 +50,18 @@ const behavioral = (
             description="الگوهایی که به شما کمک می‌کنند نحوه ایجاد شیء را بهینه‌تر مدیریت کنید"
             imageSRC="/img/ChainOfResponsibility.png"
             placeholderSrc={"/img/small/ChainOfResponsibility.png"}
-            link="/patterns_catalog/structural"/>
+            link="/pattern/behavioral/chainOfResponsibility"/>
         <PatternCard
             title="Command"
             description="الگوهایی که به شما کمک می‌کنند ساختارهای مختلف برنامه را بهبود بخشید"
             imageSRC="/img/Command.webp"
-            link="/patterns_catalog/structural"/>
+            link="/pattern/behavioral/command"/>
         <PatternCard
             title="Interpreter"
             description="الگوهایی که بر رفتار و ارتباط بین اشیاء متمرکز می‌شوند"
             imageSRC="/img/Interpreter.jpg"
             placeholderSrc={"/img/small/Interpreter.jpg"}
-            link="/patterns_catalog/structural"/>
+            link="/pattern/behavioral/interpreter"/>
     </>
 )
 const creational = (
@@ -70,62 +70,17 @@ const creational = (
             title="Abstract Factory"
             description="الگوهایی که به شما کمک می‌کنند نحوه ایجاد شیء را بهینه‌تر مدیریت کنید"
             imageSRC="/img/AbstractFactory.jpg"
-            link="/patterns_catalog/structural"/>
+            link="/pattern/structural/abstractFactory"/>
         <PatternCard
             title="Builder"
             description="الگوهایی که به شما کمک می‌کنند ساختارهای مختلف برنامه را بهبود بخشید"
             imageSRC="/img/Builder.avif"
-            link="/patterns_catalog/structural"/>
+            link="/pattern/structural/builder"/>
         <PatternCard
             title="Factory Method"
             description="الگوهایی که بر رفتار و ارتباط بین اشیاء متمرکز می‌شوند"
             imageSRC="/img/FactoryMethod.png"
-            link="/patterns_catalog/structural"/>
-        <PatternCard
-            title="Abstract Factory"
-            description="الگوهایی که به شما کمک می‌کنند نحوه ایجاد شیء را بهینه‌تر مدیریت کنید"
-            imageSRC="/img/AbstractFactory.jpg"
-            link="/patterns_catalog/structural"/>
-        <PatternCard
-            title="Builder"
-            description="الگوهایی که به شما کمک می‌کنند ساختارهای مختلف برنامه را بهبود بخشید"
-            imageSRC="/img/Builder.avif"
-            link="/patterns_catalog/structural"/>
-        <PatternCard
-            title="Factory Method"
-            description="الگوهایی که بر رفتار و ارتباط بین اشیاء متمرکز می‌شوند"
-            imageSRC="/img/FactoryMethod.png"
-            link="/patterns_catalog/structural"/>
-        <PatternCard
-            title="Abstract Factory"
-            description="الگوهایی که به شما کمک می‌کنند نحوه ایجاد شیء را بهینه‌تر مدیریت کنید"
-            imageSRC="/img/AbstractFactory.jpg"
-            link="/patterns_catalog/structural"/>
-        <PatternCard
-            title="Builder"
-            description="الگوهایی که به شما کمک می‌کنند ساختارهای مختلف برنامه را بهبود بخشید"
-            imageSRC="/img/Builder.avif"
-            link="/patterns_catalog/structural"/>
-        <PatternCard
-            title="Factory Method"
-            description="الگوهایی که بر رفتار و ارتباط بین اشیاء متمرکز می‌شوند"
-            imageSRC="/img/FactoryMethod.png"
-            link="/patterns_catalog/structural"/>
-        <PatternCard
-            title="Abstract Factory"
-            description="الگوهایی که به شما کمک می‌کنند نحوه ایجاد شیء را بهینه‌تر مدیریت کنید"
-            imageSRC="/img/AbstractFactory.jpg"
-            link="/patterns_catalog/structural"/>
-        <PatternCard
-            title="Builder"
-            description="الگوهایی که به شما کمک می‌کنند ساختارهای مختلف برنامه را بهبود بخشید"
-            imageSRC="/img/Builder.avif"
-            link="/patterns_catalog/structural"/>
-        <PatternCard
-            title="Factory Method"
-            description="الگوهایی که بر رفتار و ارتباط بین اشیاء متمرکز می‌شوند"
-            imageSRC="/img/FactoryMethod.png"
-            link="/patterns_catalog/structural"/>
+            link="/pattern/structural/factoryMethod"/>
     </>
 )
 

@@ -12,7 +12,6 @@ function App() {
             (config) => {
                 const token = Cookies.get('token');
                 config.headers.Authorization = `Bearer ${token}`;
-                console.log(config)
                 return config;
             },
             (error) => {
