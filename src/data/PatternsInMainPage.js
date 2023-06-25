@@ -19,7 +19,7 @@ export const patternsInMainPage = [
     ],
   },
   {
-    img: "/img/MP-structure.png",
+    img: "/img/MP-structure.jpg",
     name: "پترن های ساختاری",
     position: "الگوهایی که به شما کمک می‌کنند ساختارهای مختلف برنامه را بهبود بخشید",
     socials: [
@@ -38,7 +38,7 @@ export const patternsInMainPage = [
     ],
   },
   {
-    img: "/img/MP-Scream.png",
+    img: "/img/MP-Scream.jpg",
     name: "پترن های رفتاری",
     position: "الگوهایی که بر رفتار و ارتباط بین اشیاء متمرکز می‌شوند",
     socials: [
@@ -57,7 +57,7 @@ export const patternsInMainPage = [
     ],
   },
   {
-    img: "/img/MP-SOLID.png",
+    img: "/img/MP-SOLID.jpg",
     name: "اصول SOLID",
     position: "مجموعه‌ای از اصول که به شما کمک می‌کنند ساختار و معماری برنامه را قابل فهم، قابل توسعه و قابل نگهداری کنید",
     socials: [

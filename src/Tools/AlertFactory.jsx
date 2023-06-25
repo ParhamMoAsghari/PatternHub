@@ -8,8 +8,12 @@ class AlertFactory {
                 return AlertFactory.createSuccessAlert(message, className);
             case 400:
                 return AlertFactory.createErrorAlert(message, className);
+            case 401:
+                return AlertFactory.createErrorAlert(message, className);
             case 404:
                 return AlertFactory.createNotFoundAlert(message, className);
+            case 409:
+                return AlertFactory.createErrorAlert(message, className);
             case null:
                 return AlertFactory.createNetworkErrorAlert(message, className);
             // Add more cases as needed for other status codes

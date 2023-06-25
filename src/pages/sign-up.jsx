@@ -13,6 +13,7 @@ import { SimpleFooter } from "@/widgets/layout";
 import axios from "axios";
 import {useState} from "react";
 import AlertFactory from "@/Tools/AlertFactory.jsx";
+import serverUrl from "@/config.js";
 
 export function SignUp() {
   const [email, setEmail] = useState('');
@@ -25,13 +26,12 @@ export function SignUp() {
     let response;
     try {
       // Make register request to the server using axios
-      response = await axios.post('http://localhost:3000/users/register', {email, password, name});
+      response = await axios.post(serverUrl + '/users/register', {email, password, name});
       // Redirect or perform other actions after successful
       setAlert(AlertFactory.createAlert(response.status, "ثبت نام با موفقیت انجام شد!", "fixed content-center justify-center mt-16 sm:mr-8 sm:w-1/3"));
     } catch (error) {
       // Handle login error
-      setAlert(AlertFactory.createAlert(response?.status||null, error, "fixed content-center justify-center mt-16 sm:mr-8 sm:w-1/3"));
-      console.error(error)
+      setAlert(AlertFactory.createAlert(error?.response?.status||null, error?.response?.data?.message||null, "fixed content-center justify-center mt-16 sm:mr-8 sm:w-1/3"));
     }
   };
 

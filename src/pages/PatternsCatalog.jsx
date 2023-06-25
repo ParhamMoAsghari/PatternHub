@@ -8,17 +8,17 @@ const types = (
         <PatternCard
             title="الگو های آفرینشی"
             description="الگوهایی که به شما کمک می‌کنند نحوه ایجاد شیء را بهینه‌تر مدیریت کنید"
-            imageSRC="/img/shutterstock_752300290.png"
+            imageSRC="/img/shutterstock_752300290.jpg"
             link="/patterns_catalog/creational"/>
         <PatternCard
             title="الگو های ساختاری"
             description="الگوهایی که به شما کمک می‌کنند ساختارهای مختلف برنامه را بهبود بخشید"
-            imageSRC="/img/building-construction-site-white-background_1308-98715.avif"
+            imageSRC="public/img/building-construction-site-white-background_1308-98715.avif"
             link="/patterns_catalog/structural"/>
         <PatternCard
             title="الگو های رفتاری"
             description="الگوهایی که بر رفتار و ارتباط بین اشیاء متمرکز می‌شوند"
-            imageSRC="/img/Untitled-design.png"
+            imageSRC="/img/Untitled-design.jpg"
             link="/patterns_catalog/behavioral"/>
     </>
 )
@@ -28,7 +28,7 @@ const structural = (
         <PatternCard
             title="Adapter"
             description="الگوی آداپتور به شما امکان می‌دهد رابطه‌ی ساختاری بین دو کلاس مختلف را تطبیق دهید."
-            imageSRC="/img/Adapter.webp"
+            imageSRC="/img/Adapter.jpg"
             link="/pattern/structural/adapter"/>
         <PatternCard
             title="Bridge"
@@ -48,13 +48,13 @@ const behavioral = (
         <PatternCard
             title="Chain of Responsibility"
             description="الگوهایی که به شما کمک می‌کنند نحوه ایجاد شیء را بهینه‌تر مدیریت کنید"
-            imageSRC="/img/ChainOfResponsibility.png"
+            imageSRC="/img/ChainOfResponsibility.jpg"
             placeholderSrc={"/img/small/ChainOfResponsibility.png"}
             link="/pattern/behavioral/chainOfResponsibility"/>
         <PatternCard
             title="Command"
             description="الگوهایی که به شما کمک می‌کنند ساختارهای مختلف برنامه را بهبود بخشید"
-            imageSRC="/img/Command.webp"
+            imageSRC="/img/Command.jpg"
             link="/pattern/behavioral/command"/>
         <PatternCard
             title="Interpreter"
@@ -79,7 +79,7 @@ const creational = (
         <PatternCard
             title="Factory Method"
             description="الگوهایی که بر رفتار و ارتباط بین اشیاء متمرکز می‌شوند"
-            imageSRC="/img/FactoryMethod.png"
+            imageSRC="/img/FactoryMethod.jpg"
             link="/pattern/creational/factoryMethod"/>
     </>
 )

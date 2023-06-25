@@ -26,7 +26,7 @@ export function ContactUs() {
                     </div>
                     <div className="mt-8 text-center">
                         <ImagePlaceHolder placeholderSrc="">
-                            <img src="/img/ContactUs.png" alt="ContactUs"/>
+                            <img src="/img/ContactUs.jpg" alt="ContactUs"/>
                         </ImagePlaceHolder>
                     </div>
                 </div>
