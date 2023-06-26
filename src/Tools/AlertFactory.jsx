@@ -9,7 +9,7 @@ class AlertFactory {
             case 400:
                 return AlertFactory.createErrorAlert(message, className);
             case 401:
-                return AlertFactory.createErrorAlert(message, className);
+                return AlertFactory.createErrorAlert("شما وارد نشدید!", className);
             case 404:
                 return AlertFactory.createNotFoundAlert(message, className);
             case 409:

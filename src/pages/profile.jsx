@@ -1,141 +1,108 @@
-import {Avatar, Typography, Button} from "@material-tailwind/react";
-import {
-    MapPinIcon,
-    BriefcaseIcon,
-    BuildingLibraryIcon,
-} from "@heroicons/react/24/solid";
-import {Footer} from "@/widgets/layout";
-import {Link} from "react-router-dom";
-import ImagePlaceHolder from "@/Tools/ImagePlaceHolder.jsx";
+import {useEffect, useState} from "react";
+import serverUrl from "@/config.js";
+import axiosInterceptor from "@/Tools/axiosInterceptor.js";
+import Cookies from 'js-cookie';
+import {useNavigate} from "react-router-dom";
+import AlertFactory from "@/Tools/AlertFactory.jsx";
 
 export function Profile() {
+
+    const [email, setEmail] = useState("");
+    const [userName, setUserName] = useState("");
+    const [role, setRole] = useState("");
+    const [alert, setAlert] = useState(null);
+
+    const SignOut = () => {
+        Cookies.remove('token');
+        const navigate = useNavigate();
+        navigate('/home');
+    };
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await axiosInterceptor.get(serverUrl + '/users/profile');
+                setUserName(response.data?.user?.name);
+                setEmail(response.data?.user?.email);
+                setRole(response.data?.user?.role);
+            } catch (error) {
+                setAlert(AlertFactory.createAlert(error?.response?.status || null, error?.response?.data?.message || null, "fixed content-center justify-center mt-16 sm:mr-8 sm:w-1/3"));
+            }
+        };
+
+        fetchData();
+    }, []);
+
     return (
         <>
+            {alert}
             <section className="relative block h-[50vh]">
                 <div
-                    className="bg-profile-background absolute top-0 h-full w-full bg-[url('/img/background-1.jpg')] bg-cover bg-center"/>
+                    className="bg-profile-background absolute top-0 h-full w-full bg-[url('/img/DesignPatterns.jpg')] bg-cover bg-center"/>
                 <div className="absolute top-0 h-full w-full bg-black/75 bg-cover bg-center"/>
             </section>
-            <section className="relative bg-blue-gray-50/50 py-16 px-4">
+            <section className="relative bg-blue-gray-50/50 py-16 px-4 content-center">
                 <div className="container mx-auto">
-                    <div
-                        className="relative mb-6 -mt-64 flex w-full min-w-0 flex-col break-words rounded-3xl bg-white shadow-xl shadow-gray-500/5">
-                        <div className="px-6">
-                            <div className="flex flex-wrap justify-center">
-                                <div className="flex w-full justify-center px-4 lg:order-2 lg:w-3/12">
-                                    <div className="relative">
-
-                                        <div className="-mt-20 w-60 h-50">
-                                            <ImagePlaceHolder placeholderSrc="">
-                                                <Avatar
-                                                    src="/img/react-js-wallpaper.png"
-                                                    alt="Profile picture"
-                                                    variant="rounded"
-                                                    className="h-full w-full shadow-xl"
-                                                />
-                                            </ImagePlaceHolder>
+                    <div className="flex items-center justify-center bg-gray-200 -mt-64 rounded-3xl">
+                        <div className="flex flex-col items-center justify-center min-h-screen min-w-full">
+                            <div className="max-w-md w-full bg-white rounded-lg shadow-md overflow-hidden">
+                                <div className="p-6">
+                                    <div className="flex items-center space-x-4">
+                                        <div className="flex-shrink-0 mx-2">
+                                            <img className="h-12 w-12 rounded-full mx-4" src="img/avatar.png" alt="Avatar"/>
                                         </div>
-
-                                    </div>
-                                </div>
-                                <div
-                                    className="mt-10 flex w-full justify-center px-4 lg:order-3 lg:mt-0 lg:w-4/12 lg:justify-end lg:self-center">
-                                    <Link to="/your-link-here">
-                                        <Button className="bg-blue-400">وصل شوید</Button>
-                                    </Link>
-                                </div>
-                                <div className="w-full px-4 lg:order-1 lg:w-4/12">
-                                    <div className="flex justify-center py-4 pt-8 lg:pt-4">
-                                        <div className="mr-4 p-3 text-center">
-                                            <Typography
-                                                variant="lead"
-                                                color="blue-gray"
-                                                className="font-bold uppercase"
-                                            >
-                                                22
-                                            </Typography>
-                                            <Typography
-                                                variant="small"
-                                                className="font-normal text-blue-gray-500"
-                                            >
-                                                دوستان
-                                            </Typography>
-                                        </div>
-                                        <div className="mr-4 p-3 text-center">
-                                            <Typography
-                                                variant="lead"
-                                                color="blue-gray"
-                                                className="font-bold uppercase"
-                                            >
-                                                10
-                                            </Typography>
-                                            <Typography
-                                                variant="small"
-                                                className="font-normal text-blue-gray-500"
-                                            >
-                                                عکس ها
-                                            </Typography>
-                                        </div>
-                                        <div className="p-3 text-center lg:mr-4">
-                                            <Typography
-                                                variant="lead"
-                                                color="blue-gray"
-                                                className="font-bold uppercase"
-                                            >
-                                                89
-                                            </Typography>
-                                            <Typography
-                                                variant="small"
-                                                className="font-normal text-blue-gray-500"
-                                            >
-                                                نظرات
-                                            </Typography>
+                                        <div>
+                                            <h2 className="text-lg font-semibold text-gray-800">{userName}</h2>
+                                            <p className="text-sm text-gray-500">{email}</p>
+                                            <p className="text-sm text-gray-500">{role}</p>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-
-                            <div className="my-20 text-center">
-                                <Typography variant="h2" color="blue-gray" className="mb-2">
-                                    دست‌اندرکاران
-                                </Typography>
-
-                            </div>
-
-
-                            <div className="flex flex-col items-center mx-4 mb-6 md:flex-row md:justify-center md:mx-20">
-                                <div className="flex flex-col items-center mb-6">
-                                    <div className="flex flex-col items-center">
-                                        <a href="https://github.com/ramtin-mhd" target="_blank" rel="noopener noreferrer">
-                                            <ImagePlaceHolder placeholderSrc="">
-                                                <img src="https://avatars.githubusercontent.com/u/135214372?v=4" alt="Rami" className="rounded-full w-40 h-40"/>
-                                            </ImagePlaceHolder>
-                                        </a>
-                                        <p>Ramtin's GitHub</p>
+                                    <div className="mt-8">
+                                        <div className="border-t">
+                                            <div className="py-4">
+                                                <h3 className="text-lg font-semibold text-gray-800">آزمون ها</h3>
+                                                <ul className="mt-4">
+                                                    <li className="py-2">
+                                                        <a href="#" className="text-blue-500 hover:text-blue-700">Quiz
+                                                            1</a>
+                                                    </li>
+                                                    <li className="py-2">
+                                                        <a href="#" className="text-blue-500 hover:text-blue-700">Quiz
+                                                            2</a>
+                                                    </li>
+                                                    <li className="py-2">
+                                                        <a href="#" className="text-blue-500 hover:text-blue-700">Quiz
+                                                            3</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div className="border-t">
+                                            <div className="py-4">
+                                                <h3 className="text-lg font-semibold text-gray-800">تکالیف</h3>
+                                                <ul className="mt-4">
+                                                    <li className="py-2">
+                                                        <a href="#" className="text-blue-500 hover:text-blue-700">Homework
+                                                            1</a>
+                                                    </li>
+                                                    <li className="py-2">
+                                                        <a href="#" className="text-blue-500 hover:text-blue-700">Homework
+                                                            2</a>
+                                                    </li>
+                                                    <li className="py-2">
+                                                        <a href="#" className="text-blue-500 hover:text-blue-700">Homework
+                                                            3</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-
-                                <div className="flex flex-col items-center mb-6">
-                                    <div className="flex flex-col items-center">
-                                        <a href="https://github.com/ParhamMoAsghari" target="_blank" rel="noopener noreferrer">
-                                            <ImagePlaceHolder placeholderSrc="">
-                                                <img src="https://avatars.githubusercontent.com/u/96473677?v=4" alt="Pari" className="rounded-full w-40 h-40"/>
-                                            </ImagePlaceHolder>
-                                        </a>
-                                        <p>Parham's GitHub</p>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-                            <div className="mb-10 border-t border-blue-gray-50 py-6 text-center">
-                                <div className="mt-2 flex flex-wrap justify-center">
-                                    <div className="flex w-full flex-col items-center px-4 lg:w-9/12">
-                                        <Typography className="mb-8 font-normal text-blue-gray-500">
-                                            بستگی داره !
-                                        </Typography>
-                                        <Button variant="text">بیشتر</Button>
+                                    <div className="mt-8">
+                                        <button
+                                            className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+                                            onClick={SignOut}>
+                                            خروج
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -143,10 +110,6 @@ export function Profile() {
                     </div>
                 </div>
             </section>
-
-            <div className="bg-blue-gray-50/50">
-                <Footer/>
-            </div>
         </>
     );
 }
