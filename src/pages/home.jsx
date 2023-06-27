@@ -22,7 +22,7 @@ export function Home() {
                                 color="white"
                                 className="mb-4 font-black"
                             >
-                                پترن هاب
+                                ! IT DEPENDS
                             </Typography>
                             <Typography variant="lead" color="white" className="opacity-80">
                                 یادگیری آنلاین دیزاین پترن ها

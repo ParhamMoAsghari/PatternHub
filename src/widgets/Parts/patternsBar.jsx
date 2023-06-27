@@ -12,12 +12,13 @@ export function patternsBar() {
                     همراه با توضیحات و مثال های متنوع
                 </PageTitle>
                 <div className="mt-24 grid grid-cols-1 gap-12 gap-x-24 md:grid-cols-2 xl:grid-cols-4">
-                    {patternsInMainPage.map(({img, name, position, socials}) => (
+                    {patternsInMainPage.map(({img, name, position, socials,link}) => (
                         <TeamCard
                             key={name}
                             img={img}
                             name={name}
                             position={position}
+                            link={link}
                             socials={
                                 <div className="flex items-center gap-2">
                                     {socials.map(({color, name}) => (

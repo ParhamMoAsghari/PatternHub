@@ -8,15 +8,8 @@ export const patternsInMainPage = [
         color: "light-blue",
         name: "twitter",
       },
-      {
-        color: "blue",
-        name: "facebook",
-      },
-      {
-        color: "pink",
-        name: "dribbble",
-      },
     ],
+    link: "/patterns_catalog/creational"
   },
   {
     img: "/img/MP-structure.jpg",
@@ -27,15 +20,8 @@ export const patternsInMainPage = [
         color: "light-blue",
         name: "twitter",
       },
-      {
-        color: "blue",
-        name: "facebook",
-      },
-      {
-        color: "pink",
-        name: "dribbble",
-      },
     ],
+    link: "/patterns_catalog/structural"
   },
   {
     img: "/img/MP-Scream.jpg",
@@ -46,15 +32,8 @@ export const patternsInMainPage = [
         color: "light-blue",
         name: "twitter",
       },
-      {
-        color: "blue",
-        name: "facebook",
-      },
-      {
-        color: "pink",
-        name: "dribbble",
-      },
     ],
+    link: "/patterns_catalog/behavioral"
   },
   {
     img: "/img/MP-SOLID.jpg",
@@ -65,15 +44,8 @@ export const patternsInMainPage = [
         color: "light-blue",
         name: "twitter",
       },
-      {
-        color: "blue",
-        name: "facebook",
-      },
-      {
-        color: "pink",
-        name: "dribbble",
-      },
     ],
+    link: ""
   },
 ];
 
