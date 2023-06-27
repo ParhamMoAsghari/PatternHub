@@ -1,7 +1,15 @@
 import React from 'react';
 import ImagePlaceHolder from "@/Tools/ImagePlaceHolder.jsx";
+import axios from "axios";
+import serverUrl from "@/config.js";
 
 export function ContactUs() {
+    const [email, setEmail] = React.useState("");
+    const [name, setName] = React.useState("");
+const [message, setMessage] = React.useState("");
+    async function sendEmail() {
+        await axios.post(serverUrl + "/mail/contactUs", {email: email, subject: name, message: message})
+    }
     return (<>
             <section className="relative block h-[50vh]">
                 <div
@@ -36,6 +44,9 @@ export function ContactUs() {
                             className="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
                             type="text"
                             placeholder="نام"
+                            onChange={(event) => {
+                                setName(event.target.value)
+                            }}
                         />
                     </div>
                     <div className="mt-8">
@@ -43,6 +54,9 @@ export function ContactUs() {
                             className="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
                             type="email"
                             placeholder="آدرس ایمیل"
+                            onChange={(event) => {
+                                setEmail(event.target.value)
+                            }}
                         />
                     </div>
                     <div className="mt-8">
@@ -50,10 +64,14 @@ export function ContactUs() {
                             className="w-full h-32 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
                             defaultValue={""}
                             placeholder={"پیام"}
+                            onChange={(event) => {
+                                setMessage(event.target.value)
+                            }}
                         />
                     </div>
                     <div className="mt-8">
                         <button
+                            onClick={sendEmail}
                             className="uppercase text-sm font-bold tracking-wide bg-indigo-500 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline">
                             ارسال
                         </button>
