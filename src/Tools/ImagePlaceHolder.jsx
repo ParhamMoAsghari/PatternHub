@@ -17,7 +17,7 @@ const ImagePlaceHolder = ({placeholderSrc, children}) => {
         }
     }, [])
     return (
-        <div ref={ref} className="blurred-img" style={{backgroundImage: `url(${placeholderSrc})`}}>
+        <div key={placeholderSrc} ref={ref} className="blurred-img" style={{backgroundImage: `url(${placeholderSrc})`}}>
             {children}
         </div>
     )

@@ -79,15 +79,13 @@ export function PatternsCatalog() {
                             ) : (
                                 patternType && patterns.length > 0 ? (
                                     patterns.map((pattern) => (
-                                        <ImagePlaceHolder placeholderSrc={""}>
-                                            <PatternCard
-                                                key={pattern.name}
-                                                title={pattern.name}
-                                                description={pattern.description}
-                                                imageBase64={pattern.image}
-                                                link={`/pattern/${patternType}/${pattern.name}`}
-                                            />
-                                        </ImagePlaceHolder>
+                                        <PatternCard
+                                            key={pattern.name}
+                                            title={pattern.name}
+                                            description={pattern.description}
+                                            imageBase64={pattern.image}
+                                            link={`/pattern/${patternType}/${pattern.name}`}
+                                        />
                                     ))
                                 ) : (
                                     patternType === undefined && types
