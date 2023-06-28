@@ -101,7 +101,7 @@ Footer.defaultProps = {
         {
             color: "black",
             name: "github",
-            path: "https://patternhub.ir/contact_us",
+            path: "/GitHub",
         },
     ],
     menus: [
@@ -111,7 +111,7 @@ Footer.defaultProps = {
                 {name: "درباره ما", path: "https://"},
                 {
                     name: "گیت هاب",
-                    path: "https://patternhub.ir/contact_us",
+                    path: "/GitHub",
                 },
                 {
                     name: "محصولات ما",
@@ -124,7 +124,7 @@ Footer.defaultProps = {
             items: [
                 {
                     name: "دست اندرکاران",
-                    path: "https://patternhub.ir/contact_us",
+                    path: "/GitHub",
                 },
                 {
                     name: "ارتباط با ما",
