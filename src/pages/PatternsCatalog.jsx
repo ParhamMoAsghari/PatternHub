@@ -15,7 +15,7 @@ const types = (
         <PatternCard
             title="الگو های ساختاری"
             description="الگوهایی که به شما کمک می‌کنند ساختارهای مختلف برنامه را بهبود بخشید"
-            imageSRC="public/img/building-construction-site-white-background_1308-98715.avif"
+            imageSRC="/img/structural_patterns.jpg"
             link="/patterns_catalog/structural"/>
         <PatternCard
             title="الگو های رفتاری"

@@ -8,7 +8,8 @@ export function ContactUs() {
     const [name, setName] = React.useState("");
 const [message, setMessage] = React.useState("");
     async function sendEmail() {
-        await axios.post(serverUrl + "/mail/contactUs", {email: email, subject: name, message: message})
+        const res = await axios.post(serverUrl + "/mail/contactUs", {email: email, subject: name, message: message});
+        console.log(res.status);
     }
     return (<>
             <section className="relative block h-[50vh]">
